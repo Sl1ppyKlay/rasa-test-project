@@ -8,9 +8,10 @@
     --text-color: #0D0D0D;
     --active-color: #313133;
     --no-active-color: #8D8D8D;
+    --down-color: #111111;
     --nav-banner-active-color: #111111;
     --nav-banner-no-active-color: rgba(17,17,17, .5);
-
+    --stick-color: #E0E1E6;
     /* шрифты */
     --font-family-bold: IBMP-SB, sans-serif;
     --font-family-medium: IBMP-M, sans-serif;

@@ -3,23 +3,138 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 120px;
+    height: 100%;
 }
 
 .header a {
     font-size: var(--default-font-size);
     text-decoration: none;
+    white-space: nowrap;
 }
 
-.header__up {
+.header__up, .header__down {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+.header__up {
+    height: 52px;
+}
+
+.header__down {
+    height: 68px;
+}
+
+.header__up::before {
+    position: absolute;
+    content: "";
+    left: calc(-50vw + 50%);
+    bottom: 0;
+    height: 1px;
+    width: 100vw;
+    background: var(--stick-color);
+}
 
 .header__up a {
     color: var(--no-active-color);
+}
+
+.header__nav-link {
+    transition: color .2s ease;
+}
+
+.header__nav-link:not(.active):hover, .header__info-link:not(.active):hover {
+    color: var(--text-color);
+}
+
+.header__up-left, .header__up-right, .header__nav,
+.header__info, .header__location, .header__down-left,
+.header__down-right, .header__order-call, .header__auth,
+.header__tabs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header__up-left, .header__up-right, .header__nav,
+.header__info, .header__down-right {
+    gap: 16px;
+}
+
+.header__tabs-link {
+    margin-right: 16px;
+}
+
+.header__tabs-link:last-of-type {
+    margin-right: 10px;
+}
+
+.header__location {
+    gap: 4px;
+}
+
+.header__down-left {
+    gap: 24px;
+}
+
+.header__tabs-link {
+    color: var(--down-color);
+}
+
+.header__hr {
+    height: 20px;
+    width: 1px;
+    background-color: var(--stick-color);
+}
+
+.header__phone {
+    font-family: var(--font-family-medium);
+    color: var(--primary-color) !important;
+}
+
+.header__location, .header__lang {
+    color: var(--text-color) !important;
+}
+
+.header__down-right a {
+    font-family: var(--font-family-medium);
+}
+
+.header__order-call {
+    color: var(--seccess-color);
+}
+
+.header__auth {
+    color: var(--primary-color);
+}
+
+/*.headers__tabs-open_arrow {*/
+
+/*}*/
+
+/*.headers__tabs-open_arrow::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*}*/
+
+.active {
+    position: relative;
+    font-family: var(--font-family-medium);
+    color: var(--active-color) !important;
+}
+
+.active::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -19px;
+    height: 2px;
+    width: 100%;
+    cursor: default;
+    background: var(--primary-color);
 }
 
 @media (max-width: 768px) {
