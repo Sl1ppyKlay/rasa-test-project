@@ -1,0 +1,19 @@
+:root {
+    /* цвета */
+    --bg-color: #F7F9FA;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --primary-color: #760135;
+    --seccess-color: #25B456;
+    --text-color: #0D0D0D;
+    --active-color: #313133;
+    --no-active-color: #8D8D8D;
+    --nav-banner-active-color: #111111;
+    --nav-banner-no-active-color: rgba(17,17,17, .5);
+
+    /* шрифты */
+    --font-family-bold: IBMP-SB, sans-serif;
+    --font-family-medium: IBMP-M, sans-serif;
+    --font-family-regular: IBMP-R, sans-serif;
+    --default-font-size: 15px;
+}

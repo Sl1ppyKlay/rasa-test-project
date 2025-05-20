@@ -1,0 +1,36 @@
+.header {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+}
+
+.header a {
+    font-size: var(--default-font-size);
+    text-decoration: none;
+}
+
+.header__up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__up a {
+    color: var(--no-active-color);
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 167px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        height: 223px;
+    }
+}
+
