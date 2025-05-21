@@ -8,11 +8,12 @@
 </head>
   <body>
     <div class="container">
+
         <header class="header">
             <div class="header__up">
                 <div class="header__up-left">
                     <div class="header__nav">
-                        <a class="header__nav-link active" href='#'>Частным клиентам</a>
+                        <a class="header__nav-link header__nav-link_active" href='#'>Частным клиентам</a>
                         <a class="header__nav-link" href='#'>Для бизнеса</a>
                     </div>
                     <div class="header__hr"></div>
@@ -48,7 +49,11 @@
                         <a href="#" class="header__tabs-link">Страхование</a>
                         <a href="#" class="header__tabs-link">Страхование</a>
                         <a href="#" class="header__tabs-link">Сервисы</a>
-                        <div class="header__tabs-open headers__tabs-open_arrow"></div>
+                        <div class="header__tabs-open">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.1666 7.16675L7.99992 9.50008L5.83325 7.16675" stroke="black" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="header__down-right">
@@ -67,6 +72,41 @@
                 </div>
             </div>
         </header>
+
+        <main class="main">
+            <div class="banner">
+                <div class="banner__container">
+                    <div class="banner__breadcrumb">
+                        <a  class="banner__breadcrumb-start" href="#">
+                            Главная
+                        </a>
+                        <div class="banner__breadcrumb-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g opacity="0.5">
+                                    <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="#131313"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <a class="banner__breadcrumb-middle" href="#">
+                            Кредит
+                        </a>
+                        <div class="banner__breadcrumb-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <g opacity="0.5">
+                                    <path d="M8.78132 7.99999L5.48132 4.69999L6.42399 3.75732L10.6667 7.99999L6.42399 12.2427L5.48132 11.3L8.78132 7.99999Z" fill="#131313"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <a class="banner__breadcrumb-end banner__breadcrumb-end_active">
+                            Автокредит
+                        </a>
+                    </div>
+                    <div class="banner__title"></div>
+                    <div class="banner__img"></div>
+                </div>
+            </div>
+        </main>
+
     </div>
   </body>
 </html>

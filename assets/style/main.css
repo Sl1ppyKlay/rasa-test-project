@@ -2,10 +2,16 @@
 @import 'base/_variables.css';
 @import 'base/_fonts.css';
 @import 'components/_header.css';
+@import 'components/_banner.css';
 
 body {
     background-color: var(--bg-color);
     font-family: var(--font-family-regular);
+    overflow-x: hidden;
+}
+
+body a {
+    text-decoration: none;
 }
 
 

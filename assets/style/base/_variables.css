@@ -16,5 +16,7 @@
     --font-family-bold: IBMP-SB, sans-serif;
     --font-family-medium: IBMP-M, sans-serif;
     --font-family-regular: IBMP-R, sans-serif;
+    --micro-little-font-size: 12px;
+    --little-font-size: 13px;
     --default-font-size: 15px;
 }
