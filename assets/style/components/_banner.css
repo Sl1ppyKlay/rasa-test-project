@@ -1,8 +1,21 @@
 .banner {
+    position: relative;
     height: 380px;
     width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    background: linear-gradient(to left, #FEE4FF, #EFF9FF);
+    left: calc(-50vw + 50%);
+    background: linear-gradient(-75deg, #FEE4FF, #EFF9FF);
+    z-index: 1;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28%;
+    background: linear-gradient(to bottom, transparent, #F7F9FA);
+    z-index: -1;
 }
 
 .banner__container {
@@ -12,30 +25,74 @@
     padding: 0 60px;
 }
 
-.banner__breadcrumb {
+.banner-breadcrumb {
     padding: 19.5px 0 0 0;
     display: flex;
     gap: 8px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 80px;
 }
 
-.banner__breadcrumb-arrow svg {
+.banner-breadcrumb__arrow svg {
     display: block;
 }
 
-.banner__breadcrumb a {
+.banner-breadcrumb a {
     color: var(--nav-banner-no-active-color);
     font-size: var(--little-font-size);
     white-space: nowrap;
     transition: all .2s ease;
 }
 
-.banner__breadcrumb a:not(.banner__breadcrumb-end_active):hover {
+.banner-breadcrumb a:not(.banner-breadcrumb__end_active):hover {
     color: var(--text-color);
 }
 
-.banner__breadcrumb-end_active {
+.banner-breadcrumb__end_active {
     color: var(--nav-banner-active-color) !important;
 }
+
+.banner-title {
+    position: relative;
+    z-index: 3; /* заготовка мб убрать  */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+
+.banner-title__text-h1 {
+    font-size: var(--h1-font-size);
+    font-family: var(--font-family-bold);
+    margin-bottom: 25px;
+}
+
+.banner-title__text-h2 {
+    font-size: var(--default-font-size);
+    font-family: var(--font-family-regular);
+}
+
+.banner-title__button {
+    cursor: pointer;
+    border: none;
+    font-size: var(--default-font-size);
+    font-family: var(--font-family-medium);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    height: 48px;
+    width: 231px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease;
+}
+
+.banner-title__button:hover {
+    transform: scale(1.02);
+}
+
