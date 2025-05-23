@@ -17,8 +17,10 @@ body a {
 
 .container {
     width: 100%;
-    max-width: min(1440px, calc(100% - 20px));
+    max-width: min(1440px, calc(100vw - 16px));
     margin: 0 auto;
+    /*max-width: 1440px;*/
+    transition: all .2s ease-in-out;
 }
 
 /*@media (max-width: 990px) {*/

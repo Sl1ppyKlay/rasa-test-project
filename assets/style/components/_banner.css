@@ -20,8 +20,10 @@
 
 .banner__container {
     width: 100%;
-    max-width: 1440px;
+    max-width: min(1440px, calc(100vw - 17px));
     margin: 0 auto;
+    /*max-width: 1440px;*/
+    transition: all .2s ease-in-out;
     padding: 0 60px;
 }
 
@@ -94,5 +96,13 @@
 
 .banner-title__button:hover {
     transform: scale(1.02);
+}
+
+@media (max-width: 895px) {
+
+    .banner__container {
+        /*padding: 0 16px;*/
+        padding: 0;
+    }
 }
 
