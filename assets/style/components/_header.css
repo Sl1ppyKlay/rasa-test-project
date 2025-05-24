@@ -2,7 +2,7 @@
     padding: 0 60px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 100%;
 }
 
@@ -11,7 +11,7 @@
     white-space: nowrap;
 }
 
-.header-top, .header-bottom {
+.header-top {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -20,13 +20,39 @@
     gap: 20px;
 }
 
+.header-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 68px;
+}
+
+.header-bottom__left {
+    margin-right: 24px;
+    grid-column: 1;
+}
+
+.header-bottom__tabs {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.header-bottom__right {
+    grid-column: 3;
+    justify-content: flex-end;
+}
+
+.header-bottom__menu_mobile {
+    display: none;
+}
+
 .header-top {
     height: 52px;
 }
 
-.header-bottom {
-    height: 68px;
-}
+/*.header-bottom {*/
+/*    height: 68px;*/
+/*}*/
 
 .header-top::before {
     position: absolute;
@@ -77,9 +103,9 @@
     transition: stroke .2s ease;
 }
 
-.header-bottom__left {
-    gap: 24px;
-}
+/*.header-bottom__left {*/
+/*    gap: 24px;*/
+/*}*/
 
 .header-bottom__tabs-link {
     transition: all .2s ease;
@@ -219,13 +245,14 @@
 }
 
 @media (min-width: 896px) {
-    .header-top__hr_mobile {
+    .header-top__hr_mobile, .header-bottom-mobile__tabs {
         display: none;
     }
 }
 
 @media (max-width: 895px) {
-    .header-top__info, .header-top__right, .header-top__hr_pc, .header-top__nav-link_active::after {
+    .header-top__info, .header-top__right,
+    .header-top__hr_pc, .header-top__nav-link_active::after {
         display: none;
     }
 
@@ -260,6 +287,45 @@
 
     .header-top__nav-link_active {
         color: var(--active-mobile-color) !important;
+    }
+
+    .header-bottom {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        height: 68px;
+    }
+
+    .header-bottom__left {
+        margin: 0;
+        grid-column: 1;
+    }
+
+    .header-bottom__tabs {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .header-bottom__right {
+        margin-right: 16px;
+        justify-self: end;
+        grid-row: 1;
+        grid-column: 2;
+        justify-content: normal;
+    }
+
+    .header-bottom__menu_mobile {
+        justify-self: end;
+        grid-row: 1;
+        grid-column: 3;
+        display: block;
+    }
+
+    .header-bottom__tabs .header-bottom__tabs-link:nth-last-child(-n+7):nth-last-child(n+5) {
+        display: block;
+    }
+    .header-bottom__tabs .header-bottom__tabs-link:nth-last-child(-n+8):nth-last-child(n+6) {
+        margin-right: 16px;
     }
 }
 
