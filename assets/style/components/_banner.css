@@ -20,9 +20,8 @@
 
 .banner__container {
     width: 100%;
-    max-width: min(1440px, calc(100vw - 17px));
+    max-width: 1440px;
     margin: 0 auto;
-    /*max-width: 1440px;*/
     transition: all .2s ease-in-out;
     padding: 0 60px;
 }
@@ -101,8 +100,7 @@
 @media (max-width: 895px) {
 
     .banner__container {
-        /*padding: 0 16px;*/
-        padding: 0;
+        padding: 0 16px;
     }
 }
 
