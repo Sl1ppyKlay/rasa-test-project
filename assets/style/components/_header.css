@@ -329,6 +329,11 @@
         gap: 0;
     }
 
+    .header-top__nav a {
+        text-align: center;
+        width: 140px;
+    }
+
     .header-top a {
         color: var(--no-active-mobile-color);
     }
