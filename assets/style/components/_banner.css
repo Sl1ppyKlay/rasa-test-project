@@ -14,7 +14,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 28%;
+    height: 104px;
     background: linear-gradient(to bottom, transparent, #F7F9FA);
     z-index: -1;
 }
@@ -34,7 +34,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 }
 
 .banner-breadcrumb__arrow svg {
@@ -137,12 +137,19 @@
 .banner-img__oval {
     width: 113px;
     height: 143px;
-    left: 590px;
-    top: 70px;
+    left: 585px;
+    top: 65px;
 }
 
 .banner-img-main, .banner-img-car {
     position: absolute;
+}
+
+.banner-img-car {
+    z-index: 2;
+    bottom: 13px;
+    left: 1300px;
+    transition: all .5s ease;
 }
 
 .banner-img-main__circle-opacity_design {
@@ -159,32 +166,32 @@
 }
 
 .banner-img-main__circle-opacity_top {
-    bottom: 170px;
+    bottom: 175px;
     height: 48px;
     width: 48px;
-    left: 850px;
+    right: 360px;
 }
 
 .banner-img-main__circle-opacity_middle {
     width: 115px;
     height: 115px;
-    bottom: 20px;
-    left: 775px;
+    bottom: 15px;
+    right: 360px;
 }
 
 .banner-img-main__circle-opacity_bottom {
     width: 42px;
     height: 42px;
-    top: 17px;
-    left: 880px;
+    top: 14px;
+    right: 325px;
 }
 
 .banner-img-main__circle-opacity_right {
     z-index: -1;
     width: 115px;
     height: 115px;
-    bottom: 140px;
-    left: 1120px;
+    bottom: 135px;
+    right: 2px;
 }
 
 .banner-img-main__circle_design {
@@ -199,16 +206,19 @@
 }
 
 .banner-img-main__circle_top {
+    z-index: -1;
     width: 61px;
     height: 61px;
-    left: 1230px;
-    bottom: 0;
+    left: -24px;
+    bottom: -12px;
 }
 
 .banner-img-main__circle_bottom {
+    z-index: -1;
     width: 43px;
     height: 43px;
-    right: 0;
+    left: -48px;
+    top: 10px;
 }
 
 
@@ -221,25 +231,128 @@
 }
 
 .banner-img-car__circle {
-    right: 0;
-    bottom: -100px;
+    right: -7px;
+    bottom: -95px;
 }
 
 .banner-img-car__car {
     position: absolute;
-    bottom: -100px;
-    right: 0;
+    bottom: -95px;
+    right: -7px;
 }
 
-.banner-img-car {
-    bottom: 10px;
-    left: 1260px;
+
+@media (max-width: 1350px) {
+    .banner-img-car {
+        left: 1200px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .banner-img-car {
+        left: 1100px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .banner-img-car {
+        left: 1025px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .banner-img-car {
+        left: 1000px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .banner-img-car {
+        left: 1050px;
+    }
 }
 
 @media (max-width: 895px) {
 
     .banner__container {
         padding: 0 16px;
+    }
+
+    .banner {
+        height: 328px;
+    }
+
+    .banner-title {
+        top: 60px;
+        gap: 24px;
+    }
+
+    .banner-breadcrumb,
+    .banner-img-main__circle-opacity_right,
+    .banner-img-main__circle_top,
+    .banner-img-main__circle_bottom {
+        display: none;
+    }
+
+    .banner-img-main {
+
+    }
+
+    .banner-img__line-one {
+        left: -586px;
+    }
+
+    .banner-img__line-two {
+        left: -320px;
+    }
+
+    .banner-img__oval {
+        left: 306px;
+        top: 8px;
+    }
+
+    .banner-img-car {
+        bottom: -53px;
+        left: 1276px;
+    }
+}
+
+@media (max-width: 785px) {
+    .banner-img-car {
+        left: 1220px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .banner-img-car {
+        left: 1203px;
+    }
+
+}
+
+@media (max-width: 740px) {
+    .banner-img-car {
+        left: 1185px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .banner-img-car {
+        left: 1135px;
+    }
+
+    .banner-img-main__circle-opacity_middle,
+    .banner-img-main__circle-opacity_bottom,
+    .banner-img-main__circle-opacity_top {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner-img-car {
+        left: 1090px;
     }
 }
 
