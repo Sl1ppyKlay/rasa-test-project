@@ -3,10 +3,11 @@
 @import 'base/_fonts.css';
 @import 'components/_header.css';
 @import 'components/_banner.css';
+@import 'components/_car-choice.css';
 
 body {
-    background-color: var(--bg-color);
     font-family: var(--font-family-regular);
+    background-color: var(--bg-color);
 }
 
 body a {

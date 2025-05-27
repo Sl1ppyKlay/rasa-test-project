@@ -6,6 +6,7 @@
     left: calc(-50vw + 50%);
     background: linear-gradient(-75deg, #FEE4FF, #EFF9FF);
     z-index: 1;
+    transition: height .5s ease;
 }
 
 .banner::after {
@@ -113,15 +114,15 @@
     transform: rotate(-57deg) translateY(70%);
 }
 
-.banner-img__line-one {
+.banner-img__line_one {
     left: -435px;
 }
 
-.banner-img__line-two {
+.banner-img__line_two {
     left: -110px;
 }
 
-.banner-img__line-three {
+.banner-img__line_three {
     left: 200px;
 }
 
@@ -289,8 +290,7 @@
 
     .banner-breadcrumb,
     .banner-img-main__circle-opacity_right,
-    .banner-img-main__circle_top,
-    .banner-img-main__circle_bottom {
+    .banner-img-main__circle_design {
         display: none;
     }
 
@@ -298,11 +298,11 @@
 
     }
 
-    .banner-img__line-one {
+    .banner-img__line_one {
         left: -586px;
     }
 
-    .banner-img__line-two {
+    .banner-img__line_two {
         left: -320px;
     }
 
@@ -312,47 +312,233 @@
     }
 
     .banner-img-car {
-        bottom: -53px;
-        left: 1276px;
+        bottom: -58px;
+        left: 920px;
     }
 }
 
-@media (max-width: 785px) {
+@media (max-width: 768px) {
     .banner-img-car {
-        left: 1220px;
+        left: 920px;
     }
 
 }
 
 @media (max-width: 768px) {
     .banner-img-car {
-        left: 1203px;
+        left: 902px;
     }
-
 }
 
-@media (max-width: 740px) {
+@media (max-width: 750px) {
     .banner-img-car {
-        left: 1185px;
+        left: 885px;
     }
-
 }
+
+@media (max-width: 730px) {
+    .banner-img-car {
+        left: 850px;
+    }
+}
+
 
 @media (max-width: 700px) {
     .banner-img-car {
-        left: 1135px;
-    }
-
-    .banner-img-main__circle-opacity_middle,
-    .banner-img-main__circle-opacity_bottom,
-    .banner-img-main__circle-opacity_top {
-        display: none;
+        left: 800px;
     }
 }
+
 
 @media (max-width: 650px) {
     .banner-img-car {
-        left: 1090px;
+        left: 770px;
     }
 }
 
+
+@media (max-width: 580px) {
+    .banner-title__button,
+    .banner-img__oval_design {
+        display: none;
+    }
+
+    .banner-img-main__circle_design {
+        display: block;
+    }
+
+    .banner {
+        height: 450px;
+    }
+
+    .banner-title {
+        top: auto;
+    }
+    .banner-breadcrumb {
+        margin-bottom: 40px;
+        display: flex;
+    }
+
+    .banner-title__text-h1 {
+        font-size: var(--h1-mobile-font-size);
+    }
+
+    .banner-img-car {
+        width: 250px;
+        height: 100%;
+        top: 177px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .banner-img-car__circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .banner-img-car__car {
+        width: 325px;
+        height: 270px;
+    }
+
+    .banner-title__text-h1 {
+        margin-bottom: 15px;
+    }
+
+    .banner-img-main__circle-opacity_top {
+        width: 31.5px;
+        height: 31.5px;
+        top: 15px;
+        left: -60px;
+    }
+
+    .banner-img-main__circle-opacity_middle {
+        width: 75.5px;
+        height: 75.5px;
+        top: 70px;
+        left: -115px;
+    }
+
+    .banner-img-main__circle-opacity_bottom {
+        width: 27.5px;
+        height: 27.5px;
+        top: 165px;
+        left: -30px;
+    }
+
+    .banner-img-main__circle-opacity_right {
+        display: block;
+        width: 75.5px;
+        height: 75.5px;
+        top: -30px;
+        left: 170px;
+    }
+
+    .banner-img-main__circle_top {
+        height: 40px;
+        width: 40px;
+        top: 111px;
+        left: 234px;
+    }
+
+    .banner-img-main__circle_bottom {
+        height: 28px;
+        width: 28px;
+        top: 167px;
+        left: 221px;
+    }
+
+    .banner-img__line_design {
+        transform: rotate(-57deg) translateY(100%);
+    }
+
+    .banner-img__line_one {
+        left: -1420px;
+    }
+    .banner-img__line_two {
+        left: -1095px;
+    }
+    .banner-img__line_three {
+        left: -770px;
+    }
+
+    .banner-img-main__color_design {
+        z-index: -1;
+        position: absolute;
+        width: 273px;
+        height: 273px;
+        filter: blur(100px);
+        opacity: 0.5;
+        border-radius: 50%;
+    }
+
+    .banner-img-main__color_left {
+        background-color: var(--blur-pink-color);
+        top: 123px;
+        left: 183px;
+    }
+    .banner-img-main__color_right {
+        background-color: var(--blur-blue-color);
+        top: 123px;
+        left: -183px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner-img-car {
+        width: 216px;
+        top: 165px;
+    }
+
+    .banner-img-car__circle {
+        width: 216px;
+        height: 216px;
+    }
+
+    .banner-img-car__car {
+        width: 270px;
+        height: 206px;
+    }
+
+    .banner-img-main__circle-opacity_top {
+        top: 48px;
+    }
+
+    .banner-img-main__circle-opacity_middle {
+        top: 120px;
+        left: -100px;
+    }
+
+    .banner-img-main__circle-opacity_bottom {
+        top: 201px;
+        left: -28px;
+    }
+
+    .banner-img-main__circle-opacity_right {
+        top: 31px;
+        left: 142px;
+    }
+
+    .banner-img-main__circle_top {
+        top: 162px;
+        left: 201px;
+    }
+
+    .banner-img-main__circle_bottom {
+        top: 203px;
+        left: 184px;
+    }
+}
+
+/*@media (max-width: 360px) {*/
+/*    .banner-img-car__circle {*/
+/*        width: 216px;*/
+/*        height: 216px;*/
+/*    }*/
+
+/*    .banner-img-car__car {*/
+/*        width: 270px;*/
+/*        height: 206px;*/
+/*    }*/
+/*}*/
