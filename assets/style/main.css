@@ -3,7 +3,7 @@
 @import 'base/_fonts.css';
 @import 'components/_header.css';
 @import 'components/_banner.css';
-@import 'components/_car-choice.css';
+@import 'components/_car-buy.css';
 
 body {
     font-family: var(--font-family-regular);
@@ -25,6 +25,5 @@ body a {
 @media (max-width: 895px) {
     .container {
         overflow-x: hidden;
-        padding: 0 16px;
     }
 }
