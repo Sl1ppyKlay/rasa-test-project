@@ -16,6 +16,8 @@
     --oval-color: #A4C4FF;
     --blur-blue-color: #A4C4FF;
     --blur-pink-color: #D70066;
+    --gray-buttn-color: #F3F3F5;
+    --gray-stroke-color: #ECEDF0;
     /* мобильные цвета */
     --active-mobile-color: #111111;
     --no-active-mobile-color: #606266;
@@ -28,6 +30,6 @@
     --default-font-size: 15px;
 
     --h1-font-size: 38px;
-    --h1-car-choice-font-size: 32px;
+    --h1-car-buy-font-size: 32px;
     --h1-mobile-font-size: 28px;
 }

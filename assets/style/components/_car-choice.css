@@ -1,9 +1,9 @@
-.car-choice {
+.car-buy {
     padding: 40px 173px 0 173px;
     transition: all .5s ease;
 }
 
-.car-choice__main {
+.car-buy__main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -12,13 +12,13 @@
     align-content: center;
 }
 
-.car-choice__title {
-    font-size: var(--h1-car-choice-font-size);
+.car-buy__title {
+    font-size: var(--h1-car-buy-font-size);
     font-family: var(--font-family-medium);
     color: var(--black-color);
 }
 
-.car-choice__button {
+.car-buy__button {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -34,35 +34,52 @@
     transition: transform 0.3s ease;
 }
 
-.car-choice__button:hover {
+.car-buy__button:hover {
     transform: scale(1.01);
 }
 
+.car-filter__title_design {
+    font-family: var(--font-family-medium);
+    font-size: var(--default-font-size);
+    color: var(--black-color);
+}
+
+.car-filter__button_design {
+    height: 40px;
+    border: var(--gray-stroke-color) 1px solid;
+    background-color: var(--gray-color);
+    border-radius: 8px;
+}
+
+.car-filter__button_mark {
+    width: 441px;
+}
+
 @media (max-width: 1300px) {
-    .car-choice {
+    .car-buy {
         padding: 40px 100px 0 100px;
     }
 }
 
 @media (max-width: 920px) {
-    .car-choice {
+    .car-buy {
         padding: 40px 60px 0 60px;
     }
 }
 
 
 @media (max-width: 895px) {
-    .car-choice {
+    .car-buy {
         padding: 40px 0 0 0;
     }
 }
 
 @media (max-width: 640px) {
-    .car-choice {
+    .car-buy {
         padding: 40px 0 0 0;
     }
 
-    .car-choice__main {
+    .car-buy__main {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-start;
@@ -70,13 +87,17 @@
         gap: 24px;
     }
 
-    .car-choice__title {
+    .car-buy__title {
         font-size: var(--h1-mobile-font-size);
     }
 }
 
 @media (max-width: 580px) {
-    .car-choice {
+    .car-buy {
         padding: 32px 0 0 0;
+    }
+
+    .car-buy__button {
+        width: 100%;
     }
 }
