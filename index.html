@@ -166,17 +166,29 @@
                 <div class="car-filter">
                     <div class="car-filter__mark">
                         <p class="car-filter__title car-filter__title_design">Марка</p>
-                        <button class="car-filter__button car-filter__button_mark car-filter__button_design"></button>
+                        <button class="car-filter__button car-filter__button_mark car-filter__button_design">
+                            Выбрать
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15.25 10.75L12 14.25L8.75 10.75" stroke="#797A80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </div>
                     <div class="car-filter__year">
                         <p class="car-filter__title car-filter__title_design">Год</p>
-                        <button class="car-filter__button car-filter__button_year car-filter__button_design"></button>
+                        <button class="car-filter__button car-filter__button_year car-filter__button_design">
+                            Выбрать
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15.25 10.75L12 14.25L8.75 10.75" stroke="#797A80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </div>
                     <div class="car-filter__price">
                         <p class="car-filter__title car-filter__title_design">Цена</p>
-                        <button class="car-filter__button car-filter__button_from car-filter__button_design"></button>
-                        <div class="car-filter__hr"></div>
-                        <button class="car-filter__button car-filter__button_to car-filter__button_design"></button>
+                        <div class="car-filter__inputs">
+                            <input type="number" placeholder="От" class="car-filter__input car-filter__input_from car-filter__input_design">
+                            <div class="car-filter__hr car-filter__hr_design"></div>
+                            <input type="number" placeholder="До" class="car-filter__input car-filter__input_to car-filter__input_design">
+                        </div>
                     </div>
                 </div>
             </div>

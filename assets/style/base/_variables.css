@@ -2,6 +2,7 @@
     /* цвета */
     --bg-color: #F7F9FA;
     --black-color: #000000;
+    --black-rgba-color: rgba(0, 0, 0, 0.5);
     --white-color: #FFFFFF;
     --primary-color: #760135;
     --seccess-color: #25B456;
@@ -16,8 +17,9 @@
     --oval-color: #A4C4FF;
     --blur-blue-color: #A4C4FF;
     --blur-pink-color: #D70066;
-    --gray-buttn-color: #F3F3F5;
+    --gray-button-color: #F3F3F5;
     --gray-stroke-color: #ECEDF0;
+    --gray-hr-color: #E6E7EB;
     /* мобильные цвета */
     --active-mobile-color: #111111;
     --no-active-mobile-color: #606266;
