@@ -6,6 +6,7 @@
     --white-color: #FFFFFF;
     --primary-color: #760135;
     --seccess-color: #25B456;
+    --secondary-color: #282828;
     --text-color: #0D0D0D;
     --active-color: #313133;
     --no-active-color: #8D8D8D;
@@ -20,6 +21,7 @@
     --gray-button-color: #F3F3F5;
     --gray-stroke-color: #ECEDF0;
     --gray-hr-color: #E6E7EB;
+    --black-title-color: #111111;
     /* мобильные цвета */
     --active-mobile-color: #111111;
     --no-active-mobile-color: #606266;
@@ -34,4 +36,5 @@
     --h1-font-size: 38px;
     --h1-car-buy-font-size: 32px;
     --h1-mobile-font-size: 28px;
+    --h3-font-size: 24px;
 }

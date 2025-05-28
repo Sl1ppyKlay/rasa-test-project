@@ -4,6 +4,7 @@
 @import 'components/_header.css';
 @import 'components/_banner.css';
 @import 'components/_car-buy.css';
+@import 'components/_car-choice.css';
 
 body {
     font-family: var(--font-family-regular);
