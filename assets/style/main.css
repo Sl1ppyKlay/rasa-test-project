@@ -36,4 +36,7 @@ body a {
     .main {
         margin-bottom: 100px;
     }
+    .container {
+        overflow: hidden;
+    }
 }
