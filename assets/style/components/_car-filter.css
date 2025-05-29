@@ -3,7 +3,7 @@
     transition: all .5s ease;
 }
 
-.car-buy__main {
+.car-buy__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -200,7 +200,7 @@
         width: 100%;
     }
 
-    .car-buy__main {
+    .car-buy__wrapper {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: flex-start;
@@ -219,7 +219,7 @@
 }
 
 @media (max-width: 580px) {
-    .car-buy__main {
+    .car-buy__wrapper {
         margin-bottom: 16px;
     }
 

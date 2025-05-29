@@ -1,0 +1,83 @@
+.car-buy-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.car-buy-main__container {
+    display: flex;
+    height: 336px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    padding: 16px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.car-buy-main__img {
+    max-height: 200px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.car-buy-main__bottom {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.car-buy-main__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-buy-main__top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.car-buy-main__h4_design {
+    color: var(--black-title-color);
+    font-size: var(--h4-font-size);
+    font-family: var(--font-family-medium);
+}
+
+.car-buy-main__city_design {
+    color: var(--secondary-color);
+    font-size: var(--default-font-size);
+    font-family: var(--font-family-regular);
+}
+
+.car-buy-main__price_design {
+    color: var(--primary-color);
+    font-size: var(--h4-font-size);
+    font-family: var(--font-family-medium);
+}
+
+.car-buy-main__more_design {
+    color: var(--secondary-color);
+    font-size: var(--little-font-size);
+    font-family: var(--font-family-regular);
+}
+
+@media (max-width: 600px) {
+    .car-buy-main {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 527px) {
+    .car-buy-main {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
