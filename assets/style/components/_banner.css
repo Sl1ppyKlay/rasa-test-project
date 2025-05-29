@@ -18,12 +18,12 @@
 .banner::after {
     content: '';
     position: absolute;
-    bottom: 0;
     left: 0;
+    margin-top: 10px;
     width: 100%;
     height: 104px;
     background: linear-gradient(to bottom, transparent, #F7F9FA);
-    z-index: -1;
+    z-index: 0;
 }
 
 .banner__container {
@@ -280,6 +280,9 @@
 }
 
 @media (max-width: 895px) {
+    .banner::after {
+        margin-top: 80px;
+    }
 
     .banner__container {
         padding: 0 16px;
@@ -365,7 +368,8 @@
 
 @media (max-width: 580px) {
     .banner-title__button,
-    .banner-img__oval_design {
+    .banner-img__oval_design,
+    .banner::after {
         display: none;
     }
 

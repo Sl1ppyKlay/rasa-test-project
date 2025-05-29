@@ -124,6 +124,10 @@
     width: 100%;
 }
 
+.car-buy__button.active svg {
+    transform: rotate(180deg);
+}
+
 
 @media (max-width: 1300px) {
     .car-buy {

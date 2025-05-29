@@ -462,7 +462,7 @@
     .header-bottom__tabs {
         padding-right: 28px;
         overflow-x: auto;
-        width: 100vw;
+        width: 95vw;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }

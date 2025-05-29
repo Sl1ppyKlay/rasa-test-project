@@ -1,5 +1,4 @@
 :root {
-    /* цвета */
     --bg-color: #F7F9FA;
     --black-color: #000000;
     --black-rgba-color: rgba(0, 0, 0, 0.5);
@@ -15,16 +14,20 @@
     --nav-banner-active-color: #111111;
     --nav-banner-no-active-color: rgba(17,17,17, .5);
     --stick-color: #E0E1E6;
+    --stick-two-color: #E6E7EB;
     --oval-color: #A4C4FF;
     --blur-blue-color: #A4C4FF;
     --blur-pink-color: #D70066;
+    --link-footer-color: #7E7F85;
+    --desc-footer-color: #BABCC2;
+    --gray-footer-color: #606266;
     --gray-button-color: #F3F3F5;
     --gray-stroke-color: #ECEDF0;
     --gray-hr-color: #E6E7EB;
     --black-title-color: #111111;
-    /* мобильные цвета */
     --active-mobile-color: #111111;
     --no-active-mobile-color: #606266;
+    --rasa-color: #009EE2;
     /* шрифты */
     --font-family-regular: IBMP-R, sans-serif;
     --font-family-medium: IBMP-M, sans-serif;
@@ -32,10 +35,11 @@
     --micro-little-font-size: 12px;
     --little-font-size: 13px;
     --default-font-size: 15px;
-
     --h1-font-size: 38px;
     --h1-car-buy-font-size: 32px;
     --h1-mobile-font-size: 28px;
     --h3-font-size: 24px;
     --h4-font-size: 24px;
+    --h4-little-font-size: 17px;
+    --footer-little-font-size: 17px;
 }

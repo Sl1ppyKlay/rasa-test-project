@@ -10,6 +10,7 @@
 @import 'components/_car-buy-show.css';
 @import 'components/_car-buy-conditions.css';
 @import 'components/_car-buy-question.css';
+@import 'components/_footer.css';
 
 body {
     font-family: var(--font-family-regular);
@@ -29,13 +30,6 @@ body a {
 
 .main {
     margin-bottom: 104px;
-}
-
-
-@media (max-width: 895px) {
-    .container {
-        overflow-x: hidden;
-    }
 }
 
 @media (max-width: 768px) {

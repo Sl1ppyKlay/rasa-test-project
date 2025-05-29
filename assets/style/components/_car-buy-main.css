@@ -77,6 +77,10 @@
     color: var(--hover-color);
 }
 
+.car-buy-main.show-all .car-buy-main__container {
+    display: flex;
+}
+
 @media (max-width: 768px){
     .car-buy-main {
         margin-bottom: 16px;
