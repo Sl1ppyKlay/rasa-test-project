@@ -1,0 +1,72 @@
+.car-buy-question {
+    display: flex;
+    gap: 63px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-buy-question__title {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.car-buy-question__h3 {
+    color: var(--black-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--font-family-medium);
+    width: 215px;
+}
+
+.car-buy-question__container_design {
+    cursor: pointer;
+    border: none;
+    height: 52px;
+    width: 100%;
+    border-radius: 16px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-size: var(--default-font-size);
+    font-family: var(--font-family-regular);
+    padding: 0 40px 0 24px;
+}
+
+.car-buy-question__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .car-buy-question {
+        gap: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .car-buy-question__h3 {
+        width: auto;
+    }
+
+    .car-buy-question__title {
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .car-buy-question__h3 {
+        width: 215px;
+    }
+    .car-buy-question__container_design {
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    .car-buy-question__title {
+        align-items: flex-start;
+    }
+}

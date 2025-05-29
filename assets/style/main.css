@@ -6,6 +6,10 @@
 @import 'components/_car-filter.css';
 @import 'components/_car-choice-main.css';
 @import 'components/_car-buy-main.css';
+@import 'components/_car-buy-form.css';
+@import 'components/_car-buy-show.css';
+@import 'components/_car-buy-conditions.css';
+@import 'components/_car-buy-question.css';
 
 body {
     font-family: var(--font-family-regular);
@@ -23,9 +27,19 @@ body a {
     max-width: 1440px;
 }
 
+.main {
+    margin-bottom: 104px;
+}
+
 
 @media (max-width: 895px) {
     .container {
         overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-bottom: 100px;
     }
 }

@@ -1,0 +1,164 @@
+.car-buy-conditions {
+    margin-bottom: 105px;
+}
+
+.car-buy-conditions__container {
+    display: grid;
+    height: 60px;
+    grid-template-columns: repeat(auto-fit, 365px);
+}
+
+.car-buy-conditions_design {
+    width: 100%;
+    height: 399px;
+    padding: 40px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    display: grid;
+}
+
+.car-buy-conditions__more {
+    display: flex;
+    justify-self: end;
+    align-self: end;
+    flex-direction: row;
+    align-items: center;
+}
+
+.car-buy-conditions__info {
+    position: relative;
+    bottom: 7px;
+}
+
+.car-buy-conditions__title_design {
+    color: var(--primary-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--font-family-bold);
+}
+
+.car-buy-conditions__key_design, .car-buy-conditions__value_design {
+    align-self: center;
+    color: var(--black-color);
+    font-size: var(--default-font-size);
+    font-family: var(--font-family-regular);
+}
+
+.car-buy-conditions__container_design {
+    position: relative;
+}
+
+.car-buy-conditions__container_design::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    background: var(--stick-color);
+}
+
+.car-buy-conditions__more_design {
+    color: var(--primary-color);
+    font-size: var(--default-font-size);
+    font-family: var(--font-family-medium);
+    display: flex;
+    gap: 16px;
+}
+
+.car-buy-conditions__more_design,
+.car-buy-conditions__more_design svg path {
+    transition: color .3s ease, stroke .3s ease;
+}
+
+.car-buy-conditions__more_design:hover {
+    color: var(--hover-color);
+}
+
+.car-buy-conditions__more_design:hover svg path {
+    stroke: var(--hover-color);
+}
+
+.car-buy-conditions__value_design {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.car-buy-conditions__key_design {
+    font-family: var(--font-family-medium);
+}
+
+@media (max-width: 768px) {
+    .car-buy-conditions__container {
+        grid-template-columns: repeat(auto-fit, 409px);
+    }
+
+    .car-buy-conditions {
+        margin-bottom: 73px;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .car-buy-conditions__key_design {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .car-buy-conditions__info {
+        top: 2px;
+        bottom: auto;
+    }
+
+    .car-buy-conditions_design {
+        height: 457px;
+    }
+    .car-buy-conditions__container {
+        grid-template-columns: repeat(auto-fit, 250px);
+        height: 88px;
+    }
+
+    .car-buy-conditions__container_little {
+        height: 68px;
+    }
+
+    .car-buy-conditions__value_design {
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 12px;
+    }
+
+    .car-buy-conditions__value_design_first {
+        margin-top: 8px;
+    }
+
+    .car-buy-conditions__key_center {
+        justify-content: center;
+    }
+
+    .car-buy-conditions__more {
+        justify-self: start;
+    }
+
+    .car-buy-conditions_design {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .car-buy-conditions__key_center {
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 368px) {
+    .car-buy-conditions_design {
+        padding: 24px;
+    }
+
+    .car-buy-conditions {
+        margin-bottom: 81px;
+    }
+}

@@ -54,6 +54,11 @@
     flex-direction: row;
     align-items: center;
     gap: 8px;
+    transition: gap .5s ease;
+}
+
+.car-choice-main__more_design:hover {
+    gap: 20px;
 }
 
 .car-choice-main__car {

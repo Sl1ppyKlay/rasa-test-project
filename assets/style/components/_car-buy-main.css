@@ -3,6 +3,7 @@
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 16px;
     width: 100%;
+    margin-bottom: 24px;
 }
 
 .car-buy-main__container {
@@ -65,10 +66,31 @@
 }
 
 .car-buy-main__more_design {
+    cursor: pointer;
+    transition: color .2s ease;
     color: var(--secondary-color);
     font-size: var(--little-font-size);
     font-family: var(--font-family-regular);
 }
+
+.car-buy-main__more_design:hover {
+    color: var(--hover-color);
+}
+
+@media (max-width: 768px){
+    .car-buy-main {
+        margin-bottom: 16px;
+    }
+
+    .car-buy-main__container:nth-child(n+7) {
+        display: none;
+    }
+
+    .car-buy-main__container {
+        gap: 19px;
+    }
+}
+
 
 @media (max-width: 600px) {
     .car-buy-main {
@@ -79,5 +101,14 @@
 @media (max-width: 527px) {
     .car-buy-main {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 360px){
+    .car-buy-main__container:nth-child(n+4) {
+        display: none;
+    }
+    .car-buy-main__container {
+        gap: 0;
     }
 }
