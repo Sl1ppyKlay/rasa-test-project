@@ -463,7 +463,7 @@
     .header-bottom__tabs {
         padding-right: 28px;
         overflow-x: auto;
-        width: 95vw;
+        width: 100vw;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -485,13 +485,4 @@
         display: block !important;
         margin-right: 16px !important;
     }
-
 }
-
-
-/*@media (max-width: 360px) {*/
-/*    .header {*/
-/*        height: 223px;*/
-/*    }*/
-/*}*/
-
