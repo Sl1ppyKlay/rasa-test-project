@@ -11,7 +11,8 @@
     height: 380px;
     width: 100vw;
     max-width: 100%;
-    left: calc(-50vw + 50%);
+    left: 50%;
+    transform: translateX(-50%);
     background: linear-gradient(-75deg, #FEE4FF, #EFF9FF);
 }
 

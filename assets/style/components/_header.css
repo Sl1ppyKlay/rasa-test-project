@@ -104,7 +104,8 @@
 .header-top::before {
     position: absolute;
     content: "";
-    left: calc(-50vw + 50%);
+    left: 50%;
+    transform: translateX(-50%);
     top: 52px;
     height: 1px;
     width: 100vw;
